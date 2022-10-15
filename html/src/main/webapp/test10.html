@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iframe</title>
+</head>
+<body>
+		<h1>iframe으로 페이지 내에 다른 페이지 보여주기</h1>
+		&lt;iframe src="보여줄..." width="n" height="n"&gt; &lt;/iframe&gt;
+		<iframe width="800" height="100">
+		
+		<iframe>
+			iframe을 지원 못하는 브라우저 사용자용 메세지(새끼브라우저ㅋㅋ)
+		</iframe>
+		
+		<h2>iframe안에 보여줄 수 있는 종류</h2>
+		<ul>
+			<li>
+				URL<br>
+				<iframe src="http://www.itwillbs.co.kr/"></</iframe><br>
+			</li>
+			
+			<li>
+				web page - *.html or *.htm<br>
+				<iframe src="test09.html"></</iframe><br>
+			</li>
+			
+			<li>
+				image or movie - *.jpg/*.gif/*.png or *.mp4/*.webm/*.ogg<br><br>
+				<iframe src="img/cat.jpg"></</iframe><br>
+				<iframe src="img/trees.jpg"></</iframe><br>
+			</li>
+			
+			<li>
+				text file - *.txt<br>
+			</li>
+			
+		</ul>
+		
+		
+		
+		
+		<hr>
+		<h2>iframe안에 링크열기</h2>
+		링크를 열고자 하는 iframe에 <b>name="abc"</b>를 추가하고
+		링크에 target="abc"를 지정
+		절대로 언더바 사용금지
+		<iframe src="test01.html" width="1000" height="800"></iframe>
+		<nav>
+			<a href="test01.html">test01.html"</a>
+			<a href="test02.html">test02.html"</a>
+			<a href="test03.html">test03.html"</a>
+			<a href="test04.html">test04.html"</a>
+			<a href="test05.html">test05.html"</a>
+			<a href="test06.html">test06.html"</a>
+			<a href="test07.html">test07.html"</a>
+			<a href="test08.html">test08.html"</a>
+			<a href="test09.html">test09.html"</a>
+			<a href="test10.html">test10.html"</a>
+			
+		</nav>
+		
+
+
+
+		
+		<h4>문제. iframe안에 링크열기</h4>
+		
+		<iframe src="img/cat.jpg" width="600" height="400" name="ifbox02"></iframe>
+		<nav>
+			<a href="img/cat.jpg" target="ifbox02">photo-01</a>
+			<a href="img/coffee2.jpg" target="ifbox02">photo-02</a>
+			<a href="img/coffee.jpg" target="ifbox02">photo-03</a>
+			
+		</nav>
+		
+		
+
+</body>
+</html>
