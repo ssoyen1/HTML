@@ -1,0 +1,236 @@
+﻿<!Doctype html>
+ <head>
+  <title>List </title>
+ </head>
+ <body>
+ <h1>List - 목록 만들기</h1>
+ <hr>
+
+ <h2>목록의 종류</h2>
+ <ul>
+ <li>순서가 없는 목록 - <b>&lt;ul&gt;</b></li>
+ <li>순서가 있는 목록 - &lt;ol&gt;</li>
+ <li>정의 목록 - &lt;dl&gt;</li>
+ </ul>
+<!-- 목록 안으로 들어가는 것 ul 의 특징 
+ https://www.w3schools.com/html/html_lists.asp-->
+<hr>
+<h3>1. 순서가 없는 목록 - ul(unordered list)</h3>
+<ul>
+ <li>항목하나하나 li 붙혀주기</li>
+ <li>html</li>
+ <li>css</li>
+ <li>js</li>
+</ul>
+
+<ul>
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ul>
+
+<ul>
+ <li style="color:red;">
+  red = #ff0000 = rgb(255,0,0)</li>
+ <li style="color:green;">
+  green = #00ff00 = rgb(0,255,0)</li> 
+ <li style="color:blue;"> 
+ blue = #0000ff = rgb(0,0,255)</li>
+</ul>
+
+<hr>
+<h3>2. 순서가 있는 목록 - ol(ordered list)</h3>
+<ol> 
+ <li>html</li>
+ <li>css</li>
+ <li>js</li>
+</ol>
+
+<ol>
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+<ol>
+ <li>red</li>
+ <li>green</li>
+ <li>blue</li>
+</ol>
+
+
+<h4> ol 앞의 기본 모양 바꾸기 - type속성 </h4>
+<!-- 총 5가지-->
+<p> type="1/a/A/i/I"</p>
+<ol type="1">
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+<ol type="a">
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+<ol type="A">
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+<ol type="i">
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+<ol type="I">
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+
+
+
+<h4>ol 시작바꾸기 - start 속성 </h4>
+
+<p></p>
+<ol start="11">
+<!--start는 숫자만 사용가능-->
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+<ol start="100">
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+<ol start="6" type="A">
+<!-- f는 6번째므로 6을 먼저 입력 후 타입 입력하기. 명령 2개 같이할 수 있음--> 
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+<ol start="7" type="i">
+ <li>web</li>
+ <li>job</li>
+ <li>java</li>
+ <li>DB</li>
+ <li>jsp</li>
+</ol>
+
+
+<h4>하위목록(목록 안의 목록) 만들기</h4>
+<!--하위 목록 만드려면 </li> 종료태그를 밑으로 보내야함!엔터!-->
+<ul>
+ <li>coffee
+  <ul>
+   <li>hot</li>
+   <li>cold</li>
+  </ul>
+ </li>
+
+ <li>tea
+   <ul>
+    <li>hot
+     <ol type="i">
+      <li>black tea</li>
+      <li>green tea</li>
+     </ol>
+    </li>
+    <li>cold</li>
+   </ul>
+ </li>
+</ul>
+
+
+<hr>
+<h3>3. 정의 목록 (Description List)</h3>
+
+ <d1>
+  <dt>dt : 정의내리는 개념 </dt>
+  <dd>dd : 개념설명 </dd>
+ </d1>
+
+ <d1>
+  <dt>html?</dt>
+  <dd>Hypr Text Markup Language의 약자</dd>
+ </d1>
+
+ <d1>
+  <dt>html?</dt>
+  <dd>Hypr Text Markup Language의 약자</dd>
+  <dd>웹페이지를 만드는 프로그램 언어</dd>
+  <dd>웹페이지의 구조를 담당명령어(tag)로 구성됨</dd>
+  <dd>하나에 다 묶을 수도 있으나, 나중에 따로 기능을 줄 수 있으므로 따로 태그거는 편이ㅇ</dd>
+ </d1>
+
+ <d1>
+  <dt>css?</dt>
+  <dd>Cascading Style Sheets의 약자</dd>
+  <dd>웹페이지의 디자인을 담당하고 스타일속성으로 구성됨</dd>
+
+ </d1>
+
+<h4>본인 3가지 관점에서 정의하기</h4>
+ <d1>
+  <dt>1. 이름</dt>
+   <dd>이소연</dd> 
+  <dt>2. 취미</dt>
+   <dd>영화, 책읽기, 음악</dd>
+  <dt>3. 좋아하는 것</dt>
+   <dd>강아지</dd>
+ </d1>
+
+
+
+ <d1>
+ <dt>html</dt>
+ <dd>웹페이지의 구조를 담당</dd>
+ <dt>css</dt>
+ <dd>웹페이지의 디자인을 담당</dd>
+ <dt>js</dt>
+ <dd>웹페이지의 동적인 효과를 담당</dd>
+ </d1>
+
+
+
+
+
+
+
+
+ </body>
+</html>
+
+
+
+
+
