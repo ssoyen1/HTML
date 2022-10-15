@@ -1,0 +1,329 @@
+<html>
+ <head>
+  <title> table - 표 만들기 </title>
+  <style type="text/css">
+   table, th, td {border:1px solid #05a;}
+  </style>
+ </head>
+ <body>
+  <hr>
+  <h1>table - 표 만들기</h1>
+  <h3>1. 세로형 표</h3>
+  <table>
+   <tr>
+    <th>no.</th>
+    <th>title</th>
+    <th>date</th>
+   </tr>
+   <tr>
+    <td>01</td>
+    <td>html~?</td>
+    <td>2022.08.14</td>
+   </tr>
+   <tr>
+    <td>02</td>
+    <td>css~?</td>
+    <td>2022.08.19</td>
+   </tr>
+  </table>
+
+  <h3>2. 가로형 표</h3>
+  <table>
+   <tr>
+    <th>no.</th>
+    <td>01</td>
+    <td>020</td>
+   </tr>
+  <tr>
+   <th>title</th>
+   <td>html~?</td>
+   <td>css~?</td>
+  </tr>
+  <tr>
+   <th>date</th>
+   <td>2022.08.14</td>
+   <td>2022.08.19</td>
+  </tr>
+  </table>
+
+ <h2>표를 구성하는 태그</h2>
+ <table>
+  <tr>
+   <th>table</th>
+   <th>tr</th>
+   <th>th</th>
+   <th>td</th>
+  </tr>
+  <tr>
+   <td>표 전체를 구성하는 태그</td>
+   <td>줄을 구성하는 태그</td>
+   <td>제목칸(셀)을 구성하는 태그<br>
+    글자는 <b>bold체</b>로, 
+    내용정렬은 <b>center</b>로 나타남
+   </td>
+   <td>일반칸(셀)을 구성하는 태그</td>  
+  </tr>
+ </table>
+
+<br>
+
+ <table>
+  <caption><b>출석표</b></caption>
+  <!-- caption 태그는 표나 그림의 제목을 지정 -->
+  <tr>
+   <th>no.</th>
+   <th>name</th>
+   <th>check</th>
+  </tr>
+  <tr>
+   <td>01</td>
+   <td>Leesoyeon</td>
+   <td>Y</td>
+  </tr>
+  <tr>
+   <td>02</td>
+   <td>Austin Butler</td>
+   <td>Y</td>
+  </tr>
+  <tr>
+   <td>03</td>
+   <td>Justin Bieber</td>
+   <td>Y</td>
+  </tr>
+ </table>
+
+<br>
+
+  <table>
+   <caption>문제. 표 만들기</caption>
+   <tr>
+    <th>no.</th>
+    <th>title</th>
+    <th>name</th>
+    <th>date</th>
+   </tr>
+   <tr>
+    <td>01</td>
+    <td>html?</td>
+    <td>Gang jh</td>
+    <td>2022.08.19</td>
+   </tr>
+   <tr>
+    <td>02</td>
+    <td>tag?</td>
+    <td>kim mj</td>
+    <td>2022.08.19</td>
+   </tr>
+   <tr>
+    <td>03</td>
+    <td>table?</td>
+    <td>kim mj-2</td>
+    <td>2022.08.19</td>
+   </tr>
+  </table>
+
+  <hr>
+  <h2>cell(칸) 합치기</h2> 
+  <ol>
+   <li><b> colspan="n"</b> 가로로 개의 칸을 하나로 합침</li>
+   <li><b> rowspan="n"</b>가로로 개의 칸을 하나로 합침</li>
+  </ol>
+
+  <table>
+   <tr>
+    <th colspan="2">colspan</th>
+    <th>2</th>
+   </tr>
+   <tr>
+    <th colspan="2">가로로</th>
+    <th>2</th>
+   </tr>
+   <tr>
+    <td>개의 칸을</td>
+    <td>하나로</td>
+    <td>합침</td>
+   </tr>
+  </table>
+
+<br>
+
+ <table>
+  <tr>
+   <td>1</td>
+   <td colspan="2">2</td>
+  </tr>
+  <tr>
+   <td colspan="2">3</td>
+   <td>4</td>
+  </tr>
+  <tr>
+   <td>5</td>
+   <td>6</td>
+   <td>7</td>
+  </tr>
+ </table>
+
+<br>
+
+  <table>
+   <tr>
+    <td colspan="3">1</td>
+   </tr>
+   <tr>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+   </tr>
+   <tr>
+    <td colspan="2">5</td>
+    <td>6</td>
+   </tr>
+  </table>
+
+<br>
+
+  <table>
+   <tr>
+    <td rowspan="2">1</td>
+    <td>2</td>
+    <td>3</td>
+   </tr>
+   <tr>
+    <td>4</td>
+    <td>5</td>
+   </tr>
+   <tr>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+   </tr>
+
+  </table>
+
+<br>
+
+  <table>
+   <tr>
+    <td>1</td>
+    <td rowspan="3">2</td>
+    <td>3</td>
+   </tr>
+   <tr>
+    <td>4</td>
+    <td rowspan="2">5</td>
+   </tr>
+   <tr>
+    <td>6</td>
+   </tr>
+  </table>
+ 
+
+<br>
+
+ <table>
+  <tr>
+   <td rowspan="3">1</td>
+   <td>2</td>
+   <td rowspan="2">3</td>
+  </tr>
+  <tr>
+   <td>4</td>
+  </tr> 
+  <tr>
+   <td>5</td>
+   <td>6</td>
+  </tr>
+ </table>
+
+<br>
+<hr>
+
+ <table>
+  <tr>
+   <th colspan="4">아이티윌 게스트하우스 예약 안내</th>
+  </tr>
+  <tr>
+   <th>방 이름</th>
+   <th>대상</th>
+   <th>크기</th>
+   <th>가격</th>
+  </tr>
+  <tr>
+   <th>유채방</th>
+   <td>여성도미토리</td>
+   <td rowspan="3">4인실</td>
+   <td rowspan="4">1인 20,000원</td>
+  </tr>
+  <tr>
+   <th rowspan="2">동백방</th>
+   <td>남성 도미토리</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>가족 1팀</td>
+  </tr>
+  <tr>
+   <th colspan="2">천혜향방</th>
+   <td>2인실</td>
+  </tr>
+  <tr>
+   <td colspan="4"><b>바깥채 단독 : 전화문의</b> (010-777-5454)</td>
+  </tr>
+  <tr>
+  </tr>
+ </table>
+
+<br>
+
+  <table>
+   <tr>
+    <th colspan="6">자바 개발자반</th>
+   </tr>
+   <tr>
+    <th colspan="2">오라클</th>
+    <th colspan="2">웹표준 UI</th>
+    <th colspan="2">애플리케이션</th>
+   </tr>
+   <tr>
+    <td rowspan="4">1교시<br>~<br>4교시</td>
+    <td rowspan="4"><b>특강</b><br><small>강사</small> <br>홍길동</td>
+    <td colspan="2">1교시</td>
+    <td colspan="2">1교시</td>
+   </tr>
+   <tr>
+    <td colspan="2">2교시</td>
+    <td colspan="2">2교시</td>
+   </tr>
+   <tr>
+    <td colspan="2">3교시</td>
+    <td colspan="2">3교시</td>
+   </tr>
+   <tr>
+    <td colspan="2">4교시</td>
+    <td colspan="2">4교시</td>
+   </tr>
+   <tr>
+    <td colspan="2">5교시</td>
+    <td rowspan="4">5교시<br>~<br>8교시</td>
+    <td rowspan="4"><b>특강</b><br><small>강사</small> <br>홍길순</td>
+    <td colspan="2">5교시</td>
+   </tr>
+   <tr>
+    <td colspan="2">6교시</td>
+    <td colspan="2">6교시</td>
+   </tr>
+   <tr>
+    <td colspan="2">7교시</td>
+    <td rowspan="2">7교시<br>~<br>8교시</td>
+    <td rowspan="2"><b>특강</b><br><small>강사</small><br>김갑을</td>
+   </tr>
+   <tr>
+   </tr>
+  </table>
+ 
+
+
+
+
+ </body>
+</html>
