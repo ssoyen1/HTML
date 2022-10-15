@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>a로 내부링크 걸기</title>
+</head>
+<body>
+
+
+	<nav> <!-- 메뉴바 링크 -->
+		<a href="test08.html">링크수업-1</a>
+		<a href="test08.html#target">링크수업-1(target)</a>
+		<a href="test09.html">링크수업-2</a>
+	</nav>
+
+
+	<hr>
+	<h1>a로 내부링크 걸기</h1>
+	<!-- ctrl + F11 -->
+		
+		<p> 
+			<a href="#">top</a> 페이지 최상위로 이동하는 top링크
+		</p>
+	
+		
+		<h2>photo gallery</h2>
+
+		<br><br><br>
+		
+		<p>
+			[페이지 최상위로 이동하는 top링크] <br>
+			<a href="#">top</a>
+			<br><br>
+			[페이지 특정위치로 이동하는 링크] <br>
+			&lt; a href="<b>#def</b>"&gt;def&lt;/a&gt;   ----   def를 클릭시 id가 def인 요소를 찾아서 ↓이동함<br>
+				...<br>
+				&lt;tag id="abc"&gt;<br>
+				&lt;tag id="def"&gt;<br>
+				...<br>
+			&lt; a href="<b>#abc</b>"&gt;abc&lt;/a&gt;   ----   def를 클릭시 id가 abc인 요소를 찾아서 ↑이동함<br>
+			<br><br><br>
+			[다른 문서의 특정위치로 이동하는 링크]<br>
+			&lt; a href="<b>*.html#abc</b>"&gt;...&lt;/a&gt;   ----   def를 클릭시 id가 abc인 요소를 찾아서 ↑이동함<br>
+			
+		</p>
+		</pre>
+		<h2>photo gallery</h2>
+		<nav id="pg-menu">
+			<a href="#h3_01">photo-1</a>
+			<a href="#h3_02">photo-2</a>
+			<a href="#h3_03">photo-3</a>
+			<a href="#h3_04">photo-4</a>
+			<a href="#h3_05">photo-5</a>
+			<a href="#h3_06">photo-6</a>
+			<a href="#h3_07">photo-7</a>
+			<a href="#h3_08">photo-8</a>
+			<a href="#h3_09">photo-9</a>
+			<a href="#h3_010">photo-10</a>
+		</nav>
+		
+		<hr>
+		<h3 id="h3_01">photo-01</h3>
+			<img alt="abend" src="img/abend.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_02">photo-02</h3>
+			<img alt="abend" src="img/alleksana.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_03">photo-03</h3>
+			<img alt="abend" src="img/arches.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_04">photo-04</h3>
+			<img alt="abend" src="img/art.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_05">photo-05</h3>
+			<img alt="abend" src="img/away.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_06">photo-06</h3>
+			<img alt="abend" src="img/backpack.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_07">photo-07</h3>
+			<img alt="abend" src="img/bare.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_08">photo-08</h3>
+			<img alt="abend" src="img/bastei.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_09">photo-09</h3>
+			<img alt="abend" src="img/bear.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		
+		
+		<h2>photo gallery</h2>
+		<hr>
+		<h3 id="h3_10">photo-010</h3>
+			<img alt="abend" src="img/cat.jpg" height="800">
+			<br>
+			<a href="#pg-menu">Go-menu</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
